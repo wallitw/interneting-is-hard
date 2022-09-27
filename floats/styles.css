@@ -40,3 +40,12 @@
   overflow: hidden;
   background-color: #EAEDF0;
 }
+
+/* Style the columns we just added in the footer */
+.column {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 160px;
+  background-color: #B2D6FF; /* Medium blue */
+}
