@@ -13,9 +13,22 @@ h1 {
   padding: 50px;
 }
 
+/* Using padding with longhand properties */
 p {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
-  padding-right: 10px;  
+  padding-right: 10px;
+}
+
+/* The same padding with shorthand properties, using 2 values: padding: Vertical Horizontal; */
+
+p {
+  padding: 20px 10px; /* Vertical Horizontal */
+}
+
+/* The same padding using 4 values, it will be interpreted clockwise: padding: Top Right Bottom Left; */
+
+p {
+  padding: 20px 10px 20px 10px;
 }
