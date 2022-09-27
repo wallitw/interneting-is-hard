@@ -27,3 +27,43 @@
   font-style: italic;
   background-color: #EEB75A; /* Yellow */
 }
+
+/* Descendant selectors are for targetting only those elements that are inside of another element.
+syntax: parent-selector (SPACE) child-selector {}*/
+.synopsis em {
+  font-style: normal;
+}
+
+/* A stricter selector than the descendant selector is the child selector ">", this will only select
+direct children of the parent SYNTAX: .synopsis > em {} */
+
+/* .synopsis > em {
+font-style: normal;
+} */
+
+/* Pseudo-classes are used to style different states, like when you hover over a link */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+/* you can link multiple pseudo-classes to create specific styles for example a link thats already visited AND where the user is hovering */
+a:visited:hover {
+  color: orange;
+}
+
+a:visited:active {
+  color: red;
+}
