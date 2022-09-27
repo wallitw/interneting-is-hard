@@ -1,0 +1,21 @@
+h1, p {
+  background-color: #DDE0E3; /* Light gray */
+}
+
+em, strong {
+  background-color: #B2D6FF; /* Light Blue */
+  display: inline; /* This is the default for em and strong */
+}
+
+/* Add padding, using only 1 value, the padding will be 50px on each side */
+/* Background color expands to fill the padding space, everything inside border gets a background */
+h1 {
+  padding: 50px;
+}
+
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
