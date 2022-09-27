@@ -11,6 +11,8 @@ em, strong {
 /* Background color expands to fill the padding space, everything inside border gets a background */
 h1 {
   padding: 50px;
+  /* Adding a border using shorthand: border: size style color; */
+  border-bottom: 1px solid #5D6063;
 }
 
 /* Using padding with longhand properties */
@@ -22,13 +24,24 @@ p {
 }
 
 /* The same padding with shorthand properties, using 2 values: padding: Vertical Horizontal; */
-
 p {
   padding: 20px 10px; /* Vertical Horizontal */
 }
 
 /* The same padding using 4 values, it will be interpreted clockwise: padding: Top Right Bottom Left; */
-
 p {
   padding: 20px 10px 20px 10px;
+  /* Margin collapse: only the biggest value of margin will be displayed (not the SUM of both!) */
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+/* Padding or Margin?
+- padding has background, margins transparent
+- padding is included in click area, margins aren't
+- margins collapse vertically, padding doesn't */
+
+/* Inline elements completely ignore top and bottom margins */
+strong {
+  margin: 50px;
 }
