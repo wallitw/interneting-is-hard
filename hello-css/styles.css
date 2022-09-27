@@ -17,4 +17,21 @@ h2 {
 /* Select multiple HTML elements in the same CSS rule --> seperate them with commas */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal; 
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-alpha;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: left;
 }
