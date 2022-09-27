@@ -93,11 +93,18 @@ a:visited:active {
   color: red;
 }
 
+/* Example of the ceveats of using pseudo-classes, this css rule will color both the last p element of the container 'page' AND the last p element of container 'side bar' */
 p:last-of-type {
   margin-bottom: 50px;
+  color:red;
 }
-
+/* The problem can be avoided by using a child selector, this way the pseudo-class will only select from the .page class */
 .page > p:first-of-type {
   color: #7E8184;
   font-style: italic;
+}
+
+/* ID selector starts with a # */
+#button-2 {
+  color: #5D6063; /* Dark gray */
 }
