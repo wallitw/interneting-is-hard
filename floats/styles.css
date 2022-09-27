@@ -24,14 +24,17 @@
   background-color: #F5CF8E; /* Yellow */
 }
 
+/* clearing floats only fixes the height issue when there's an element inside the container element that we can add a clear property to */
 .footer {
-  clear: both;
+  /* clear: both; */
   height: 200px;
   background-color: #D6E9FE; /* Light Blue */
 }
-
+/* By adding an overflow: hidden declaration to a container div, we’re telling it to recognize the height of any floated elements it contains. This is how we can add a background color to our .page element and have it actually render: */
 .page {
   width: 900px;
   margin: 0 auto;
+  overflow: hidden;
+  background-color: #EAEDF0;
   border: 1px solid red;
 }
