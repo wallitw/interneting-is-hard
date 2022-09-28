@@ -27,8 +27,10 @@
 /* clearing floats only fixes the height issue when there's an element inside the container element that we can add a clear property to */
 .footer {
   /* clear: both; */
-  height: 200px;
+  /* changing the fixed height of the footer to overflow: hidden; The height will change to the container's content (=float elements 'column') */
+  overflow: hidden;
   background-color: #D6E9FE; /* Light Blue */
+
 }
 /* By adding an overflow: hidden declaration to a container div, we’re telling it to recognize the height of any floated elements it contains. This is how we can add a background color to our .page element and have it actually render: */
 .page {
@@ -44,6 +46,7 @@
 /* Style the columns we just added in the footer */
 .column {
   float: left;
+  /* Percentages are relative to the width of parent element -->responsive design */
   width: 31%;
   margin: 20px 1.15%;
   height: 160px;
