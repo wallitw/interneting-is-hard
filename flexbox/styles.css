@@ -15,7 +15,7 @@
 }
 
 .menu {
-  border: 1px solid #fff; /* for debugging */
+  /* border: 1px solid #fff; /* for debugging */
   width: 900px;
   display: flex;
   justify-content: space-between;
@@ -31,6 +31,7 @@
   margin-left: 20px;
 }
 
+
 .header-container {
   color: #5995DA;
   background-color: #D6E9FE;
@@ -43,4 +44,6 @@
   height: 300px;
   display: flex;
   justify-content: space-between;
+  /* Vertical alignment with align-items */
+  align-items: center;
 }
