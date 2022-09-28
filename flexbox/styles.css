@@ -10,10 +10,23 @@
   padding: 20px 0;
   /* Enable flexbox layout mode */
   display: flex;
+  /* Horizontal alignment; notice how we put this in the parent element (flex container)! */
   justify-content: center;
 }
 
 .menu {
   border: 1px solid #fff; /* for debugging */
   width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  /* border: 1px solid #fff;   for debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
 }
