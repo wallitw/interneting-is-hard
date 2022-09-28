@@ -83,5 +83,5 @@ p {
 
 .comment {
   margin: 10px;
-  overflow: hidden;
+  overflow: hidden; /* important: text will horizontal clear the avatar image */
 }
