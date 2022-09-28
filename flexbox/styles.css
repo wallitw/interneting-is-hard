@@ -62,11 +62,26 @@
   /* flex-direction: column; */
   /* This also changes the main axis, so the behaviour of align-items and justify-content will be swapped, use align-items for horizontal (main axis in column mode) alignment */
   /* align-items: center; */
-  flex-direction: row-reverse;
+  flex-direction: row;
+  align-items: center;
 }
 
 .photo-grid-item {
   border: 1px solid #fff;
   width: 300px;
   height: 300px;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
 }
