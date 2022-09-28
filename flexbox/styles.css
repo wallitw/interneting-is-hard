@@ -109,3 +109,8 @@
   flex: initial;
   width: 300px;
 }
+
+/* With this auto margin you can replace an extra div container in the html file, in this case it pushes signup to the right side */
+.signup {
+  margin-left: auto;
+}
