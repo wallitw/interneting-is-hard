@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+/* Using mobile-first development approach: basic styling (centering,...) later on we make a fixed-width desktop version */
 body {
   color: #5D6063;
   background-color: #EAEDF0;
@@ -30,4 +32,14 @@ body {
 .speaker-form-header h1 {
   font-size: 30px;
   margin-bottom: 20px;
+}
+
+.speaker-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 0 0 40px 0;
 }
