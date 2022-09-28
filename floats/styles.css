@@ -19,9 +19,23 @@
 
 .content {
   float: left;
+  padding: 20px;
   width: 650px;
   height: 500px;
   background-color: #F5CF8E; /* Yellow */
+}
+
+/* Adding content to the content container: styling an image and paragraphs */
+.article-image {
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 /* clearing floats only fixes the height issue when there's an element inside the container element that we can add a clear property to */
@@ -51,4 +65,23 @@
   margin: 20px 1.15%;
   height: 160px;
   background-color: #B2D6FF; /* Medium blue */
+}
+
+/* Styling an example of a user-comment thread  */
+.avatar {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+  border-radius: 40px;
+  background-color: #D6E9FE;
+}
+
+.username {
+  margin-top: 30px;
+}
+
+.comment {
+  margin: 10px;
+  overflow: hidden;
 }
