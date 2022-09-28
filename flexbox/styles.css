@@ -47,3 +47,26 @@
   /* Vertical alignment with align-items */
   align-items: center;
 }
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Flex direction changes the direction to vertical (column) or row (horizontal) */
+  /* flex-direction: column; */
+  /* This also changes the main axis, so the behaviour of align-items and justify-content will be swapped, use align-items for horizontal (main axis in column mode) alignment */
+  /* align-items: center; */
+  flex-direction: row-reverse;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
