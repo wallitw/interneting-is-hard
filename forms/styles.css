@@ -100,12 +100,61 @@ body {
 .legacy-form-row input[type='radio'] {
   float: left;
 }
+
 /* Style mobile dropdown menu (select) */
 .form-row select {
   width: 100%;
   padding: 5px;
   font-size: 14px; /* This won't work in Chrome or Safari, i think it DOES work*/
   /* -webkit-appearance: none; */
+}
+
+/* Styling textarea */
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Styling checkboxes */
+.form-row .checkbox-label {
+  margin-bottom: 0;
+}
+
+/* Styling Submit button */
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #5995DA;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
 }
 
 /* Add media query to create desktop layout */
@@ -140,12 +189,28 @@ body {
   .legacy-form-row {
     margin-bottom: 10px;
   }
+
   .legacy-form-row legend {
     width: 120px;
     text-align: right;
     padding-right: 20px;
   }
+  
   .legacy-form-row legend {
     float: left;
   }
+
+  .form-row .instructions {
+    margin-left: 120px;
+  }
+
+  .form-row .checkbox-label {
+    margin-left: 120px;
+    width: auto;
+  }
+
+  .form-row button {
+  margin-left: 120px;
+  }
+
 }
