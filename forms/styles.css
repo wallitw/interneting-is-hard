@@ -54,7 +54,8 @@ body {
 }
 
 /*  input[type="text"] is an attribute selector, it only matches input elements that have a type 'text' */
-.form-row input[type="text"] {
+.form-row input[type="text"],
+.form-row input[type="email"] {
   background-color: #FFFFFF;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -80,7 +81,10 @@ body {
     margin: 20px;
   }
 
-  .form-row input[type="text"] {
+  .form-row input[type="text"],
+  .form-row input[type="email"],
+  .form-row select,
+  .form-row textarea {
     width: 250px;
     height: initial;
   }
@@ -91,4 +95,12 @@ body {
     margin-top: 7px;
     padding-right: 20px;
   }
+}
+
+/* Pseudo-classes :valid and :invalid for styling if a user inputs a wrong value */
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
 }
