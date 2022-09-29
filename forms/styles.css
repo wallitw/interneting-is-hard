@@ -68,6 +68,39 @@ body {
   margin-bottom: 15px;
 }
 
+/* Pseudo-classes :valid and :invalid for styling if a user inputs a wrong value */
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+/* Radio button styling with floats because fieldset doesn't support flexbox */
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+  float: left;
+}
+
 /* Add media query to create desktop layout */
 @media only screen and (min-width: 700px) {
   .speaker-form-header,
@@ -95,12 +128,18 @@ body {
     margin-top: 7px;
     padding-right: 20px;
   }
-}
 
-/* Pseudo-classes :valid and :invalid for styling if a user inputs a wrong value */
-.form-row input[type="text"]:invalid,
-.form-row input[type="email"]:invalid {
-  border: 1px solid #D55C5F;
-  color: #D55C5F;
-  box-shadow: none; /* Remove default red glow in Firefox */
+  /* Desktop layout for the radio buttons using floats */
+  .legacy-form-row {
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+  .legacy-form-row legend {
+    width: 120px;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .legacy-form-row legend {
+    float: left;
+  }
 }
